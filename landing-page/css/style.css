@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    /* Color Varible */
+    --dark-blue: #1F2937;
+    --white: #f9faf8;
+    --gray: #e5e7eb;
+    --dark-gray: #787878;
+    --blue: #3882f6;
+}
+
+nav, section {
+    padding-left: 6em;
+    padding-right: 6rem;
+}
+
+section {
+    min-height: 500px;
+}
+
+header {
+    background-color: var(--dark-blue);
+
+    ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 1rem 0;
+
+        & li:first-child {
+            margin-right: auto;
+            & a {
+                color: var(--white);
+                font-size: 24px;
+                font-weight: bolder;
+            }
+        }
+    
+        & a {
+            color: var(--gray);
+            text-decoration: none;
+            font-size: 18px;
+        }
+    }
+}
+
+
+#presentation {
+    max-width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: auto;
+
+    & > div {
+        width: 450px;
+        flex: 1 1 auto;
+
+        & h1 {
+            font-size: 48px;
+            font-weight: bolder;
+            color: var(--white);
+            margin-bottom: 0.5rem;
+        }
+
+        & p {
+            font-size: 18px;
+            color: var(--gray);
+            margin-bottom: 1rem;
+        }
+
+        & button {
+            font-weight: 700;
+            color: var(--white);
+            background-color: var(--blue);
+            border: 0;
+            padding: 0.5rem 2rem;
+            border-radius: 7px;
+            margin-bottom: 1rem;
+        }    
+    }
+
+    img {
+        min-width: 0px;
+        width: 500px;
+        height: 250px;
+        object-position: center;
+        object-fit: cover;
+        flex: 1 1 auto;
+    }
+}
+
+#information {
+    min-height: 500px;
+    margin: 5rem 0 ;
+
+    h2 {
+        font-size: 36px;
+        font-weight: 900;
+        color: var(--dark-blue);
+        text-align: center;
+        padding: 2.5rem 0;
+        margin-bottom: 1rem;
+    }
+
+    & > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 4rem;
+
+        & .item-info {
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 1rem;
+
+            & p {
+                font-size: 18px;
+                color: var(--dark-gray);
+            }
+        }
+    }
+}
+
+#quotes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gray);
+
+    & figure {
+        width: 950px;
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        margin: 5rem 0;
+
+        & blockquote {
+           font-size: 36px;
+           color: var(--dark-gray);
+           font-style: italic; 
+           margin-bottom: 1.5rem;
+        }
+
+        & figcaption {
+            font-size: 28px;
+            font-weight: bold;
+            color: var(--dark-blue);
+            align-self: flex-end;
+        }
+    }
+}
+
+#sign-up {
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    margin: 5rem 0;
+
+    & > div {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: var(--blue);
+        color: var(--white);
+        padding: 2rem 4rem;
+        border-radius: 7px;
+
+        & h1 {
+            font-size: 20px;
+            margin-bottom: 0.5rem;
+        }
+
+        & p {
+            font-size: 14px;
+            color: var(--gray);
+            margin-bottom: 1.5rem;
+        }
+
+        & button {
+            font-weight: 700;
+            color: var(--white);
+            background-color: transparent;
+            border: 2px var(--white) solid;
+            border-radius: 7px;
+            padding: 0.5rem 2rem;
+        }
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    background-color: var(--dark-blue);
+    padding: 1rem 0;
+}
